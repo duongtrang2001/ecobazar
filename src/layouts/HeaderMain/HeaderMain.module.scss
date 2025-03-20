@@ -1,0 +1,92 @@
+@import '~/styles/mixins';
+
+.container {
+    @include flex(space-between);
+    height: 93px;
+}
+
+.search {
+    @include flex;
+    position: relative;
+    width: 498px;
+    height: 45px;
+    border: 1px solid var(--gray-1);
+    border-radius: 6px;
+
+    .search-input {
+        padding: 16px 10px;
+        caret-color: var(--primary);
+    }
+
+    input::placeholder {
+        color: var(--gray-5);
+    }
+
+    .search-icon {
+        margin-left: 16px;
+    }
+
+    .btn {
+        position: absolute;
+        right: 0;
+        font-weight: 600;
+        color: var(--white);
+        background-color: var(--primary);
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        height: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.actions {
+    @include flex;
+    gap: 16px;
+}
+
+.line {
+    width: 1px;
+    height: 24px;
+    background-color: var(--gray-2);
+}
+
+.group {
+    @include flex;
+
+    .icon {
+        position: relative;
+    }
+    .quantity {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        line-height: 1.8rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--white);
+        background-color: var(--hard-primary);
+        border-radius: 50%;
+        border: 1px solid var(--white);
+    }
+
+    .content {
+        margin-left: 12px;
+    }
+
+    .text {
+        display: block;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: var(--gray-7);
+    }
+
+    .price {
+        display: block;
+        font-weight: 500;
+        margin-top: 6px;
+    }
+}

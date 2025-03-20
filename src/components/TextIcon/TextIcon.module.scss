@@ -1,0 +1,10 @@
+@import '~/styles/mixins';
+
+.container {
+    @include flex;
+}
+
+li {
+    list-style: none;
+    padding-left: 0;
+}
