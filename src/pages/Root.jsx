@@ -5,15 +5,13 @@ import Header from '~/layouts/Header/Header';
 function RootLayout() {
     return (
         <>
-            <header>
-                <Header />
-            </header>
+            <Header />
+
             <main>
                 <Outlet />
             </main>
-            <footer>
-                <Footer />
-            </footer>
+
+            <Footer />
         </>
     );
 }

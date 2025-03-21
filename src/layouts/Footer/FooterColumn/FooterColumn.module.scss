@@ -1,0 +1,21 @@
+.title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.item + .item {
+    margin-top: 12px;
+}
+
+.link-item {
+    color: var(--gray-4);
+    text-transform: capitalize;
+    transition: color 0.15s ease;
+
+    &:hover,
+    &:focus {
+        color: var(--white);
+    }
+}

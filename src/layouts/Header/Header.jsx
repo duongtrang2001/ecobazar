@@ -9,7 +9,7 @@ const cx = CreateCx(styles);
 
 function Header() {
     return (
-        <div className={cx('container')}>
+        <header className={cx('container')}>
             <div className={cx('container-width')}>
                 <HeaderTopBar />
             </div>
@@ -18,7 +18,7 @@ function Header() {
                 <HeaderMain />
             </div>
             <Navbar />
-        </div>
+        </header>
     );
 }
 

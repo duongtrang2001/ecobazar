@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { CreateCx } from '~/utils/cxHelper';
+import CreateCx from '~/utils/cxHelper';
 import styles from './Button.module.scss';
 
 const cx = CreateCx(styles);

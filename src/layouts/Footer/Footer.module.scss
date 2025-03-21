@@ -1,0 +1,55 @@
+@import '~/styles/mixins';
+
+.container {
+    background-color: var(--gray-9);
+    color: var(--gray-5);
+}
+
+.group {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #333333;
+}
+
+.company {
+    grid-column: 1 / span 4;
+    .text {
+        max-width: 336px;
+        margin-top: 16px;
+    }
+
+    .wrapper {
+        @include flex($gap: 16px);
+        margin-top: 16px;
+    }
+
+    .tel,
+    .email {
+        font-weight: 500;
+        color: var(--white);
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-bottom: 1.5px solid #20b526;
+    }
+}
+
+.navigation {
+    grid-column: span 2;
+
+    &:first-child {
+        grid-column-start: 5;
+    }
+}
+
+.copy-right {
+    @include flex(space-between);
+    min-height: 80px;
+
+    .list-payment {
+        @include flex($gap: 8px);
+    }
+
+    .item {
+        height: 32px;
+    }
+}
